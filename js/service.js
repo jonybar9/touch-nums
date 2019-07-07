@@ -24,7 +24,7 @@ function getNums() {
 }
 
 function checkNumClick(num) {
-    
+    console.log('got num', num)
 }
 
 function checkWin() {
