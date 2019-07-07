@@ -24,7 +24,10 @@ function getNums() {
 }
 
 function checkNumClick(num) {
-    console.log('got num', num)
+    if(num === gNextNum) {
+        gNextNum++
+        return true
+    } else return false
 }
 
 function checkWin() {

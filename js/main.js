@@ -4,7 +4,7 @@ console.log('touch the nums')
 function init() {
     const board = createBoard()
     renderBoard(board)
-    // renderHead(1)
+    renderNextNum(1)
 }
 
 
@@ -24,45 +24,10 @@ function renderBoard(board) {
 function onNumClick(num) {
     const isCorrectNum = checkNumClick(num)
     if(!isCorrectNum) return
+    renderNextNum(++num)
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function renderHead(nextNum) {
-//     document.querySelector('span').innerText = nextNum
-// }
+function renderNextNum(nextNum) {
+    document.querySelector('span').innerText = nextNum
+}
